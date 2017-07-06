@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Anthony Passamonti - Twitter Timeline</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+
+</head>
+<body>
+
+<div id="overlay">
+	<div class="pane" id="switchUserPane">
+		<div class="paneHeader">
+			<span class="header">Select a User</span>
+		</div>
+		<div class="userPane" id="userPane1">
+		</div>
+		<div class="userPane" id="userPane2">
+		</div>
+		<div id="closeWindowPane">
+			<input type="button" name="closeButton" id="closeButton" value="Close" class="customButton" />
+		</div>
+	</div>
+</div>
+
+<div id="menuBar">
+	<a href="#"><i class="fa fa-bars" aria-hidden="true" id="mobileHamburger"></i></a>
+	<div id="menuBarLeft">
+		<a class="active" href="#"><i class="fa fa-home"></i><span>Home</span></a> 
+		<a href="#"><i class="fa fa-at"></i><span>Connect</span></a> 
+		<a href="#"><i class="fa fa-hashtag"></i><span>Discover</span></a> 
+		<a href="#"><i class="fa fa-user"></i><span>Me</span></a>
+		<a href="#" id="switchUsers"><i class="fa fa-users"></i><span>Switch User</span></a>
+	</div>
+	<div id="menuBarMiddle">
+		<i class="fa fa-twitter" aria-hidden="true" style="font-size: 32px;"></i>
+	</div>
+	<div id="menuBarRight">
+		<a href="#"><i class="fa fa-pencil"></i></a> 
+		<a href="#"><i class="fa fa-cog"></i></a> 
+		<a href="#"><i class="fa fa-envelope"></i></a> 
+		<label id="searchBoxLabel">
+			<i class="fa fa-search" aria-hidden="true"></i>
+			<input type="text" class="searchBox" placeholder="Search" />
+		</label>
+	</div>
+</div>
+
+<div id="mobileMenu">
+	<ul class="fa-ul">
+		<label id="searchBoxLabel">
+			<i class="fa fa-search" aria-hidden="true"></i>
+			<input type="text" class="searchBox" placeholder="Search" />
+		</label>
+		<br>
+		<br>
+		<li><a class="active" href="#"><i class="fa fa-li fa-home"></i><span>Home</span></a></li>
+		<li><a href="#"><i class="fa fa-li fa-at"></i><span>Connect</span></a></li>
+		<li><a href="#"><i class="fa fa-li fa-hashtag"></i><span>Discover</span></a></li> 
+		<li><a href="#"><i class="fa fa-li fa-user"></i><span>Me</span></a></li>
+		<li><a href="#" id="switchUsersMobile"><i class="fa fa-li fa-users"></i><span>Switch User</span></a></li>
+	</ul>
+</div>
+
+	<div id="mainBodyContent">
+		<div id="userProfile" class="pane">
+			<div id="userPicture">
+				<div id="userProfilePicture">
+				</div>
+			</div>
+			<div id="statistics">
+				<div class="statisticsPane">
+					<span>TWEETS</span>
+					<br>
+					<span class="statistic" id="tweetStatistic"></span>
+				</div>
+				<div class="statisticsPane">
+					<span>FOLLOWING</span>
+					<br>
+					<span class="statistic" id="followingStatistic"></span>
+				</div>
+				<div class="statisticsPane" style="border-right-width: 0px;">
+					<span>FOLLOWERS</span>
+					<br>
+					<span class="statistic" id="followersStatistic"></span>
+				</div>
+			</div>
+			<div id="composeNewTweetPane">
+				<form id="tweetForm">
+					<input type="text" name="composeNewTweet" id="composeNewTweet" placeholder="Compose new Tweet..." maxlength="140">
+					<span id="characterCounter"></span>
+					<input type="submit" name="tweetButton" id="tweetButton" value="Tweet" class="customButton" />
+				</form>
+			</div>
+		</div>
+		<div id="trends" class="pane">
+			<div class="paneHeader" style="border-bottom-width: 0px;">
+				<span class="header">Trends</span>&nbsp;&#183;&nbsp;<a href="#">Change</a>
+			</div>
+			<div id="trendsListPane">
+				<ul class="customList">
+					<li class="trendListItem"><a href="#">#DeathStarDestruction</a></li>
+					<li class="trendListItem"><a href="#">Emperor Palpatine</a></li>
+					<li class="trendListItem"><a href="#">#FallOfTheJedi</a></li>
+					<li class="trendListItem"><a href="#">#TatooineTuskanRaiders</a></li>
+					<li class="trendListItem"><a href="#">Jakku</a></li>
+					<li class="trendListItem"><a href="#">#Order66</a></li>
+					<li class="trendListItem"><a href="#">#TheSenate</a></li>
+					<li class="trendListItem"><a href="#">#PriceOfBlueMilk</a></li>
+					<li class="trendListItem"><a href="#">Coruscant</a></li>
+					<li class="trendListItem"><a href="#">Supreme Leader Snoke</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="copyrightPane" class="pane">
+			<ul>
+			<li><a href="#">&copy;2014</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Help</a></li>
+			<li><a href="#">Terms</a></li>
+			<li><a href="#">Privacy</a></li>
+			<li><a href="#">Cookies</a></li>
+			<li><a href="#">Ads info</a></li>
+			<li><a href="#">Brand</a></li>
+			<li><a href="#">Blog</a></li>
+			<li><a href="#">Status</a></li>
+			<li><a href="#">Apps</a></li>
+			<li><a href="#">Jobs</a></li>
+			<li><a href="#">Advertise</a></li>
+			<li><a href="#">Media</a></li>
+			<li><a href="#">Developers</a></li>
+			</ul>
+		</div>
+		<div id="tweetsPane" class="pane">
+			<div class="paneHeader">
+				<span class="header">Tweets</span>
+			</div>
+			<div id="tweets">
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+{
+	"users":[
+	{
+		"userName": "KMoney",
+		"fullName": "Kylo Ren",
+		"tweets": 1,
+		"following": 178,
+		"followers": 1600,
+		"userProfilePicture": "https://68.media.tumblr.com/91c46cc68c6ef62b61a0c2671feb9aed/tumblr_oqel24qxqV1r8kwvso1_400.jpg",
+		"userCoverPicture": "https://vignette2.wikia.nocookie.net/starwars/images/1/14/Starkiller_Base_parade_grounds.png/revision/latest?cb=20160415233100",
+		"usersTweets":[
+		{
+			"fullName": "Kylo Ren",
+			"userName": "KMoney",
+			"tweetText": "Ill show you, the dark side!",
+			"tweetTime": 1499264665384
+		}]
+	},
+	{
+		"userName": "lordyvader",
+		"fullName": "Darth Vader",
+		"tweets": 1,
+		"following": 165,
+		"followers": 1472,
+		"userProfilePicture": "http://www.globalo.com/content/uploads/2015/12/darth-vader.jpg",
+		"userCoverPicture": "https://vignette3.wikia.nocookie.net/starwars/images/5/50/Superlaser2.jpg/revision/latest?cb=20111104205236",
+		"usersTweets":[
+		{
+			"fullName": "Darth Vader",
+			"userName": "lordyvader",
+			"tweetText": "Be careful not to CHOKE on your aspirations",
+			"tweetTime": 1499264665387
+		}]
+	}]
+}
